@@ -1,2 +1,170 @@
 @charset "utf-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roobert";
+    background: #0e0e10;
+    color: #efeffe;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header > a{
+    width: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+}
+
+header img{
+    max-height: 35px;
+    width: 100%;
+}
+
+header nav{
+    height: 50px;
+    width: calc(100% - 50px);
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav a{
+    color: #efeffe;
+    text-decoration: none;
+    padding: 0px 10px;
+    font-size: 20pt;
+    font-weight: 600;
+    margin: auto 0px;
+    display: inline-flex;
+}
+
+header nav a:hover{
+    text-decoration: underline;
+    filter: invert(55%) 
+            sepia(79%) 
+            saturate(7499%) 
+            hue-rotate(251deg) 
+            brightness(102%) 
+            contrast(101%);
+}
+
+aside{
+    background: #1f1f23;
+    height: 100vh;
+    width: 50px;
+}
+
+aside img{
+    width: 45%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0px;
+}
+
+aside a:hover{
+    filter: invert(55%) 
+            sepia(79%) 
+            saturate(7499%) 
+            hue-rotate(251deg) 
+            brightness(102%) 
+            contrast(101%);
+}
+
+main{
+    width: calc(100% - 50px);
+}
+
+section{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 50px 0px;
+    padding-left: 50px;
+}
+
+section h2{
+    width: 100%;
+    padding: 25px 0px;
+}
+
+#home{
+    background: #9146ff;
+    width: 100%;
+    display: flex;
+}
+
+#vid{
+    margin-top: 30px;
+}
+
+#clipTitle{
+    background: #9146ff;
+    border-radius: 10px;
+    width: 150px;
+    aspect-ratio: 1/1.5;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#clipTitle h2{
+    width: 70%;
+    margin: auto;
+}
+
+#category{
+    gap: 0px 15px;
+}
+
+.poster img{
+    background: white;
+    width: 175px;
+    aspect-ratio: 3/4;
+}
+#friends{
+    margin-bottom: 50px;
+}
+
+.friend{
+    width: 175px;
+}
+
+.friend img{
+    width: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 2px solid #535256;
+    margin: auto;
+    display: flex;
+}
+
+.friend h4, .friend p{
+    text-align: center;
+}
+
+.friend h4{
+    padding-top: 12px;
+}
+
+footer{
+    background: #401c88;
+    width: 100%;
+    height: 75px;
+}
+
+footer h1{
+    font-weight: bold;
+    text-align: center;
+}
 

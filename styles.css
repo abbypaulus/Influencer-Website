@@ -18,17 +18,38 @@ header{
     height: 50px;
     display: flex;
     flex-flow: row wrap;
+    background: #0e0e10;
+    position: relative;
+    position: fixed;
+    z-index: 1;
+}
+
+header > a{
+    width: 50px;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    position: absolute;
+    left: 0;
+}
+
+header img{
+    position: relative;
+    max-height: 35px;
+    width: 100%;
+    margin: auto;
 }
 
 header nav{
-    height: 50px;
-    width: 100%;
-    text-align: right;
     display: flex;
+    height: 50px;
+    width: calc(100% - 50px);
+    text-align: right;
     justify-content: flex-end;
+    right: 0;
     position: fixed;
-    background: #0e0e10;
-    z-index: 0;
+    z-index: 1;
 }
 
 header nav a{
@@ -54,30 +75,9 @@ header nav a:hover{
 aside{
     background: #1f1f23;
     height: 100vh;
+    padding-top: 50px;
     width: 50px;
     position: fixed;
-}
-
-aside #logo{
-    width: 100%;
-    height: 50px;
-    display: flex;
-}
-
-aside #logo a{
-    width: 100%;
-    aspect-ratio: 1/1;
-    display: flex;
-    flex-flow: row wrap;
-    margin: auto;
-    background: #0e0e10;
-}
-
-aside #logo img{
-    max-height: 35px;
-    width: 100%;
-    margin: auto;
-    z-index: 1;
 }
 
 aside #anchor img{
@@ -115,11 +115,15 @@ section h2.subtitle{
 
 #home{
     background: #9146ff;
+    background-size: cover;
+    background-image: url(images/repeat.svg);
     width: 100%;
     height: 300px;
     display: flex;
     flex-flow: row wrap;
     margin-bottom: 250px;
+    position: relative;
+    z-index: -1;
 }
 
 #home #repeat{
@@ -146,18 +150,21 @@ section h2.subtitle{
 
 #name h2{
     font-size: 7vh;
-    -webkit-text-stroke: 1px #efeffe;
-    color: transparent;
+    -webkit-text-stroke: 1.5px #efeffe;
+    color: #9146ff;
 }
-
 
 #home #pic{
     width: 45%;
     max-width: 750px;
+    aspect-ratio: 16/9;
 }
 
 #pic img{
     width: 100%;
+    aspect-ratio: 16/9;
+    margin: 50px;
+    margin-left: 0px;
 }
 
 #clips{
@@ -167,11 +174,13 @@ section h2.subtitle{
 
 #clips{
     gap: 15px;
+    overflow: hidden;
 }
 
 .vid img{
     width: 350px;
     aspect-ratio: 16/9;
+    object-fit: cover;
 }
 
 .vid h3{
@@ -193,22 +202,41 @@ section h2.subtitle{
     margin: auto;
 }
 
+.vid #bg{
+    background-color: #9146ff;
+    width: 350px;
+    aspect-ratio: 16/9;
+}
+
+.vid:hover img{
+    transform: translate(10px, -10px);
+}
+
 #category{
     gap: 0px 15px;
 }
 
-.poster img{
-    background: white;
+.poster #bg{
+    background-color: #9146ff;
     width: 175px;
-    aspect-ratio: 3/4;
+    aspect-ratio: 3/4;  
+}
+
+.poster img{
+    width: 100%;
 }
 
 .poster h4{
+    padding-top: 5px;
     font-weight: 500;
 }
 
+.poster:hover img{
+    transform: translate(10px, -10px);
+}
+
 #friends{
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .friend{
@@ -245,25 +273,41 @@ footer h1{
     text-align: center;
 }
 
+
 /* Background */
 #backstory{
     background: #9146ff;
+    background-size: cover;
+    background-image: url(images/repeat.svg);
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: -1;
 }
 
 #backstory #text{
     width: 66%;
+    height: 50%;
     display: flex;
     flex-flow: row wrap;
+    margin: auto;
 }
 
 #backstory h1{
     width: 100%;
-    font-size: 70pt;
+    font-size: 14vh;
+    text-align: center;
 }
 
 #backstory p{
-    font-size: 12pt;
-    width: 100%;
+    width: 69%;
+    color: #0e0e10;
+    line-height: 17pt;
+    font-weight: 500;
+    font-size: 18pt;
+    margin: auto;
 }
 
 #backstory img{
@@ -299,27 +343,35 @@ footer h1{
 }
 
 .point h2{
-    font-size: 20pt;
+    font-size: 35pt;
     font-weight: 500;
-    line-height: 0.6;
 }
 
 .point h3{
-    font-size: 10pt;
+    font-size: 20pt;
     font-weight: 400;
 }
 
 .point p{
-    font-size: 10pt;
+    font-size: 14pt;
     font-weight: 300;
 }
 
 /* Claim to Fame */
 #claim-to-fame{
     background: #9146ff;
+    background-size: cover;
+    background-image: url(images/repeat.svg);
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: -1;
     padding: 100px 150px;
     padding-right: none;
 }
+
 #title {
     width: 250px;
     display: flex;
@@ -333,7 +385,6 @@ footer h1{
     max-width: 750px;
     aspect-ratio: 16/9;
 }
-
 
 #claim-to-fame #vid #title{
     padding-left: 25px;
@@ -371,11 +422,11 @@ footer h1{
 }
 
 #ctf #claim, #ctf #fame{
-    font-size: 80pt;
+    font-size: 14vh;
 }
 
 #ctf #to{
-    font-size: 60pt;
+    font-size: 10vh;
 }
 
 #notable{
@@ -395,7 +446,24 @@ footer h1{
     background: #1f1f23;
     width: 100%;
     aspect-ratio: 16/9;
+    display: flex;
+    position: relative;
 }
+
+#notable .moment #vid img{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+#notable .moment #vid h4{
+    background: #1f1f23be;
+    padding: 2.5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
 
 #notable .moment h3{
     padding-top: 10px;
@@ -404,5 +472,15 @@ footer h1{
 }
 
 #notable .moment #vid:hover{
-    box-shadow: -10px 10px #9146ff;
+    background:  #9146ff;
 }
+
+#notable .moment #vid:hover img{
+    transform: translate(10px, -10px);
+    cursor: pointer;
+}
+
+#notable .moment #vid:hover h4{
+    transform: translate(10px, -10px);
+}
+

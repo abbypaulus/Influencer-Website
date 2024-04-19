@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/glitch.svg" type="image/x-icon">
     <title>Home</title>
     <link rel="stylesheet" href="/styles.css">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
 </head>
 <body>
 <header>
+    <a href="/index.html"><img src="/images/glitch.svg" alt="glitch"></a>  
     <nav>
         <a href="/index.html">Home</a>
         <a href="/backstory.html">Backstory</a>
@@ -16,23 +18,17 @@
     </nav>
 </header>
 <aside>
-    <div id="logo">
-        <a href="/index.html"><img src="/images/glitch.svg" alt="glitch"></a>
-    </div>
     <div id="anchor">
-        <a href="#home"><img src="images\home.svg" alt="home"></a>
-        <a href="#clips"><img src="images\vid.svg" alt="clip"></a>
-        <a href="#category"><img src="images\category.svg" alt="category"></a>
-        <a href="#friends"><img src="images\group.svg" alt="group"></a>
+        <a href="#home"><img src="images\aside\home.svg" alt="home"></a>
+        <a href="#clips"><img src="images\aside\vid.svg" alt="clip"></a>
+        <a href="#category"><img src="images\aside\category.svg" alt="category"></a>
+        <a href="#friends"><img src="images\aside\group.svg" alt="group"></a>
     </div>
 </aside>
 <main>
     <section id="home">
-        <div id="repeat">
-            <p>HasanAbi</p>
-        </div>
         <div id="pic">
-            <img src="images/lorem.png" alt="">
+            <img src="images\vid.png" alt="">
         </div>        
         <div id="name">
             <h2>HasanAbi</h2>
@@ -44,56 +40,77 @@
             <h2 class="subtitle">Featured Clips</h2>
         </div>        
         <div class="vid">
-            <img src="images/lorem.png" alt="">
-            <h3>Lorem Ipsum</h3>
+            <div id="bg">
+                <img src="images\gifs\hasan-peace.gif" alt="">
+            </div>
+            <h3>Hasan Doğan Piker</h3>
         </div>
         <div class="vid">
-            <img src="images/lorem.png" alt="">
-            <h3>Lorem Ipsum</h3>
+            <div id="bg">
+                <img src="images\gifs\hasanabi-bruh.gif" alt="">
+            </div>
+            <h3>Twitch Streamer</h3>
+        </div>        
+        <div class="vid">
+            <div id="bg">
+                <img src="images\gifs\h3-hasan-kaya.gif" alt="">
+            </div>
+            <h3>2.5 million Followers</h3>
         </div>
         <div class="vid">
-            <img src="images/lorem.png" alt="">
-            <h3>Lorem Ipsum</h3>
-        </div>
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcUlEQVR4nO2YSU7DQBBF3w0QIMwmLFFuggQL5sNAViDfBkW5RXYMOQPZsAlgkxVToZbaUuQJ20J2teknfSm2e/F/qtwuGzwe5wiAEHgAllb39twWjnAOxIAUKAJOcSDEd0mIRF+awwS/VCKtV61tFtYIkegahcwaBDEbgDreGgQxraiOZV+CzPrSWmFfbvZtu6VWDfGidftNHoifFUKYNSco5wx4LgmxAI5xhMD2/91KgFvgyl5zErFyHvFBlOErog1fEQ1sAiNgulIR8/sS2MARjoCnkie7uXbYtqkDYJ4yYo73C9ab8x8VZq13YK/NIPMCI485a9cbTL9rbQWREqUZNXgfuWgriKdLdoBxzY9sbSsGJsCwLMRCgVGpKON1kBdkrMCc1NRNXhDN7SQlX/UziKPK0LUhH8RXhO7bSfw9Qvf/vPy7isQKTElNmXefDBMFxqSmzFiVYejg0LhLAQM7iEUKjEqBIluJwhAeD3/HDy8UuOTVNHuWAAAAAElFTkSuQmCC">
+            <div id="bg">
+                <img src="images\gifs\hasanabi-clap.gif" alt="">
+            </div>
+            <h3>July 25, 1991 (32 Years Old)</h3>
+        </div>         
     </section>
     <section id="category">
         <h2 class="subtitle">HasanAbi's most streamed Genres</h2>
         <div class="poster">
-            <img src="images/lorem.png" alt="poli">
+            <div id="bg">
+                <img src="images\poster\poli.png" alt="poli">
+            </div>
             <h4>Political Commentary</h4>
         </div>
         <div class="poster">
-            <img src="images/lorem.png" alt="reacts">
+            <div id="bg">
+                <img src="images\poster\vids.png" alt="reacts">
+            </div>
             <h4>Video Reactions</h4>
         </div>
         <div class="poster">
-            <img src="images/lorem.png" alt="gaming">
+            <div id="bg">
+                <img src="images\poster\gaming.png" alt="gaming">
+            </div>
             <h4>Gaming</h4>
         </div>
         <div class="poster">
-            <img src="images/lorem.png" alt="okbuddy">
+            <div id="bg">
+                <img src="images\poster\reddit.png" alt="okbuddy">
+            </div>
             <h4>Reddit Recap</h4>
         </div>
         <div class="poster">
-            <img src="images/lorem.png" alt="chat">
+            <div id="bg">
+                <img src="images\poster\chat.png" alt="chat">
+            </div>
             <h4>Chat Interaction</h4>
         </div>
     </section>
     <section id="friends">
         <h2 class="subtitle">HasanAbi's Friends</h2>
         <div class="friend">
-            <img src="images/will.jpg" alt="will">
+            <img src="images/friends/will.jpg" alt="will">
             <h4>willneff</h4>
             <p>Best Friend</p>
         </div>
         <div class="friend">
-            <img src="images/qt.png" alt="qt">
+            <img src="images/friends/qt.png" alt="qt">
             <h4>QTCinderella</h4>
             <p>Co-Host on Fear&</p>
         </div>
         <div class="friend">
-            <img src="images/austin.jpg" alt="austin">
+            <img src="images/friends/austin.jpg" alt="austin">
             <h4>AustinShow</h4>
             <p>Co-Host on Fear&</p>
         </div>

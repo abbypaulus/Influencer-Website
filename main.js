@@ -1,14 +1,11 @@
-<script>
-window.onload = function() {
-        var mainImg = document.getElementById('Main');
+document.addEventListener("DOMContentLoaded", function(){
+    const mainImage = document.getElementById("mainImage");
+    const thumbnails = document.querySelectorAll(".thumbnail");
 
-        document.getElementById('TNOne').onclick = function() {
-                mainImg.src = 'main1.jpg';
-                //alert('one clicked');
-        };
-        document.getElementById('TNTwo').onclick = function() {
-                mainImg.src = 'main2.jpg';
-                //alert('two clicked');
-        };
-};
-</script>
+    thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener("click", function() {
+            const imageUrl = this.getAttribute("src");
+            mainImage.setAttribute("src", imageUrl);
+        });
+    });
+});

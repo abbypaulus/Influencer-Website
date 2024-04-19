@@ -372,27 +372,66 @@ footer h1{
     padding-right: none;
 }
 
-#title {
-    width: 250px;
-    display: flex;
-    flex-flow: row wrap;
-}
-
 #claim-to-fame #vid{
     background: #1f1f23;
     width: 50%;    
     min-width: 500px;
     max-width: 750px;
     aspect-ratio: 16/9;
+    display: flex;
+    position: relative;
+}
+
+#claim-to-fame #vid img{
+    background: #1f1f23;
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
 }
 
 #claim-to-fame #vid #title{
-    padding-left: 25px;
+    background: #1f1f23be;
+    width: 100%;
+    position: absolute;
+    height: 75px;
+}
+
+#desc{
+    background: #1f1f23;
+    margin: 0px 10px;
+    padding: 25px;
+    width: calc(20% - 15px);
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+}
+
+#desc h2{
+    width: 100%;
+    font-size: 30pt;
     height: 50px;
+}
+
+#desc #date{
+    width: 100%;
+}
+
+#desc p{
+    width: 100%;
+    font-size: 15pt;
+    font-weight: 300;
+    padding: none;
+}
+
+#vid #title {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 #claim-to-fame #title img{
     width: 25%;
+    max-width: 65px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     border: 2.5px solid #535256;
@@ -401,17 +440,15 @@ footer h1{
 }
 
 #claim-to-fame #title #text{
-    padding-left: 10px;
     width: 75%;
     margin: auto;
 }
-
 #claim-to-fame #vid #text p{
     font-weight: 300;
 }
 
 #ctf{
-    width: 50%;
+    width: 30%;
     display: flex;
     flex-flow: row wrap;
 }
@@ -442,7 +479,12 @@ footer h1{
     margin-bottom: 50px;
 }
 
-#notable .moment #vid{
+.clip img{
+    width: 100%;
+    object-fit: cover;
+}
+
+#notable .moment .clip{
     background: #1f1f23;
     width: 100%;
     aspect-ratio: 16/9;
@@ -450,12 +492,12 @@ footer h1{
     position: relative;
 }
 
-#notable .moment #vid img{
+#notable .moment .clip img{
     width: 100%;
     aspect-ratio: 16/9;
 }
 
-#notable .moment #vid h4{
+#notable .moment .clip h4{
     background: #1f1f23be;
     padding: 2.5px 10px;
     border-radius: 5px;
@@ -471,16 +513,17 @@ footer h1{
 
 }
 
-#notable .moment #vid:hover{
+#notable .moment .clip:hover{
     background:  #9146ff;
 }
 
-#notable .moment #vid:hover img{
+#notable .moment .clip:hover img{
     transform: translate(10px, -10px);
     cursor: pointer;
 }
 
-#notable .moment #vid:hover h4{
+#notable .moment .clip:hover h4{
     transform: translate(10px, -10px);
 }
 
+  

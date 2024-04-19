@@ -295,6 +295,11 @@ footer h1{
     margin: auto;
 }
 
+#backstory #text p{
+    text-shadow: 0px 0px 2.5px #efeffe;
+}
+
+
 #backstory h1{
     width: 100%;
     font-size: 14vh;
@@ -335,6 +340,7 @@ footer h1{
 .point img{
     width: 50%;
     aspect-ratio: 16/9;
+    object-fit: cover;
 }
 
 .point .text{
